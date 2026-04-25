@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>Билеты — Сайт зоопарка</title>
+
+    <!--Ссылка на CSS-файл-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  </head>
+
+<body text="#ffffff">
+  <div class="container">
+    <header>
+      <div class="header-container">
+        <h2>НАШ ЗООПАРК</h2>
+        <img src="images/logo.jpg" class="logo" alt="Логотип" width="10%">
+      </div>
+        <hr>
+        <img src="images/ad-banner.gif" alt="Рекламный баннер" width="100%">
+        <hr>
+    </header>
+        <nav class="main-menu">
+          <a href="index.html" class="nav-button">Главная</a>
+          <a href="animals.html" class="nav-button">Наши животные</a>
+          <a href="tickets.html" class="nav-button">Билеты</a>
+          <a href="geo.html" class="nav-button">Местоположение</a>
+          <a href="contacts.html" class="nav-button">Контакты</a>
+        </nav>
+        <div class="info-block">
+          <h3 align="center">Как купить билеты</h3>
+          <h4>Покупка билетов онлайн (Рекомендуется)</h4>
+          <p>Этот способ экономит время и позволяет избежать очередей на входе, особенно в выходные и праздничные дни.</p>
+          <ol>
+          <li>Находясь в разделе «Билеты» на нашем официальном сайте, пролистайте ниже.</li>
+          <li>Выберите категорию: «Взрослый», «Детский» (до 14 лет) или «Льготный».</li>
+          <li>Укажите дату визита и количество человек.</li>
+          <li>Оплатите заказ банковской картой или через систему быстрых платежей.</li>
+          <li>Получите билет: он придет на вашу электронную почту в формате PDF. Скачайте его себе на устройство.</li>
+          <li>Вход в зоопарк: просто покажите QR-код билета контролеру на экране смартфона — распечатывать его необязательно.</li>
+          </ol>
+          <h4>Покупка билетов оффлайн (На кассе)</h4>
+          <p>Если вы предпочитаете бумажные билеты или приобретаете их спонтанно, воспользуйтесь кассами у главного входа.</p>
+          <ul>
+            <li>Режим работы: кассы открываются за 15 минут до открытия зоопарка и закрываются за час до его завершения.</li>
+            <li>Способы оплаты: принимаются наличные и банковские карты.</li>
+            <li>Льготы: для покупки льготного билета (пенсионеры, многодетные семьи, студенты) обязательно предъявите подтверждающий документ кассиру.</li>
+          </ul>
+          <hr>
+          <h3 align="center">Покупка онлайн</h3>
+          <form action="payment.html" method="get" class="booking-form">
+             <label for="category">Категория билета:</label>
+              <select id="category" name="category" required>
+                <option value="" disabled selected hidden>Выбор категории...</option>
+                <option value="adult">Взрослый (1500 руб.)</option>
+                <option value="child">Детский (500 руб.)</option>
+                <option value="lgt">Льготный (300 руб.)</option>
+              </select>
+              <label for="date">Дата визита:</label>
+              <input type="date" id="date" name="date" required>
+              <label for="quantity">Количество человек:</label>
+              <input type="number" id="quantity" name="quantity" min="1" max="50" value="1" required>
+              <button type="submit" class="pay-button">Перейти к оплате билета</button>
+          </form>
+        </div>
+        <hr>
+        <div class="info-bottom">
+          <p>Все права защищены © 2026 год | www.zoo-galimskikh.ru | Сайт создан Галимских Иваном | e-mail: ivan.galimskikh@gmail.com</p>
+        </div>
+  </div>
+  </body>
+</html>
